@@ -1,0 +1,14 @@
+[package]
+name = "numerical_code"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "numerical_code"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+pyo3-build-config = "*"
+
+[dependencies]
+pyo3 = { version = "*", features = ["extension-module"] }
